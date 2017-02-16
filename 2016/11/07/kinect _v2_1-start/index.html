@@ -4,22 +4,60 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Keep Learning</title>
+    <title>Kinect v2 入门之一 | Keep Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="wei">
     
 
     
-    <meta name="description" content="学以致用">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Keep Learning">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="[TOC]
+Kinect for Windows v2的学习小记之前言大家好，先简单的介绍一下这个系列的构成：
+
+写作目的
+介绍
+比较
+参考文献阅读
+其他链接
+
+目的
+可能对于这部分好多人可能不喜欢，说实话这是我最喜欢的部分了，因为这是我挖坑的动力（此处应有得意表情），这部分完全可以略过，请移步分割线正文。解释一下背景：学生一枚，两年前因为研究室的研究题目才开始接触到它，现在整理一下作为博客与大家">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kinect v2 入门之一">
+<meta property="og:url" content="http://yoursite.com/2016/11/07/kinect _v2_1-start/index.html">
 <meta property="og:site_name" content="Keep Learning">
-<meta property="og:description" content="学以致用">
+<meta property="og:description" content="[TOC]
+Kinect for Windows v2的学习小记之前言大家好，先简单的介绍一下这个系列的构成：
+
+写作目的
+介绍
+比较
+参考文献阅读
+其他链接
+
+目的
+可能对于这部分好多人可能不喜欢，说实话这是我最喜欢的部分了，因为这是我挖坑的动力（此处应有得意表情），这部分完全可以略过，请移步分割线正文。解释一下背景：学生一枚，两年前因为研究室的研究题目才开始接触到它，现在整理一下作为博客与大家">
+<meta property="og:image" content="https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/49/02/4265.v2-sensor-front.jpg">
+<meta property="og:image" content="https://dri1.img.digitalrivercontent.net/Storefront/Company/msintl/images/English/en-INTL-Microsoft-Kinect-for-Win-XB1S-Adptr-9J7-00007/en-INTL-L2-Microsoft-Kinect-for-Win-XB1S-Adptr-9J7-00007-mnco.jpg">
+<meta property="og:image" content="http://yoursite.com/kinectInstall.jpg">
+<meta property="og:image" content="http://yoursite.com/SDKBrowser.JPG">
+<meta property="og:image" content="http://yoursite.com/SDKBrowser2.png">
+<meta property="og:image" content="http://yoursite.com/Verifier.png">
+<meta property="og:updated_time" content="2017-02-16T15:40:07.103Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Keep Learning">
-<meta name="twitter:description" content="学以致用">
+<meta name="twitter:title" content="Kinect v2 入门之一">
+<meta name="twitter:description" content="[TOC]
+Kinect for Windows v2的学习小记之前言大家好，先简单的介绍一下这个系列的构成：
+
+写作目的
+介绍
+比较
+参考文献阅读
+其他链接
+
+目的
+可能对于这部分好多人可能不喜欢，说实话这是我最喜欢的部分了，因为这是我挖坑的动力（此处应有得意表情），这部分完全可以略过，请移步分割线正文。解释一下背景：学生一枚，两年前因为研究室的研究题目才开始接触到它，现在整理一下作为博客与大家">
+<meta name="twitter:image" content="https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/49/02/4265.v2-sensor-front.jpg">
 
     
     <link rel="alternative" href="/atom.xml" title="Keep Learning" type="application/atom+xml">
@@ -73,66 +111,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/01/07/testTag/" title="testTag" itemprop="url">testTag</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="wei" target="_blank" itemprop="author">wei</a>
-		
-  <p class="article-time">
-    <time datetime="2017-01-07T11:15:00.000Z" itemprop="datePublished"> Published 2017-01-07</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
-  <span></span> <a href="/tags/test/">test</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2016/11/07/kinect _v2_1-start/" title="Kinect v2 入门之一" itemprop="url">Kinect v2 入门之一</a>
@@ -146,9 +128,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <p>[TOC]</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Kinect-for-Windows-v2的学习小记之前言"><span class="toc-number">1.</span> <span class="toc-text">Kinect for Windows v2的学习小记之前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目的"><span class="toc-number">2.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-number">3.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-amp-配置"><span class="toc-number">4.</span> <span class="toc-text">安装&配置</span></a></li></ol>
+		
+		</div>
+		
+		<p>[TOC]</p>
 <h2 id="Kinect-for-Windows-v2的学习小记之前言"><a href="#Kinect-for-Windows-v2的学习小记之前言" class="headerlink" title="Kinect for Windows v2的学习小记之前言"></a>Kinect for Windows v2的学习小记之前言</h2><p>大家好，先简单的介绍一下这个系列的构成：</p>
 <ul>
 <li><strong>写作目的</strong></li>
@@ -294,14 +283,9 @@
 </tr>
 </tbody>
 </table>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -319,83 +303,51 @@
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="http://yoursite.com/2016/11/07/kinect _v2_1-start/" data-title="Kinect v2 入门之一 | Keep Learning" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/11/07/testCategories/" title="test" itemprop="url">test</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="wei" target="_blank" itemprop="author">wei</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-06T23:55:29.000Z" itemprop="datePublished"> Published 2016-11-07</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><h1 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h1><h1 id="test3"><a href="#test3" class="headerlink" title="test3"></a>test3</h1>
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/ImageProcessing/">ImageProcessing</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/test/">test</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2017/01/07/testTag/" title="testTag">
+  <strong>上一篇：</strong><br/>
+  <span>
+  testTag</span>
+</a>
 </div>
 
-</footer>
 
-
-    </article>
-
-
-
-
-
-
-
+<div class="next">
+<a href="/2016/11/07/testCategories/"  title="test">
+ <strong>下一篇：</strong><br/> 
+ <span>test
+</span>
+</a>
 </div>
+
+</nav>
+
+	
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Kinect-for-Windows-v2的学习小记之前言"><span class="toc-number">1.</span> <span class="toc-text">Kinect for Windows v2的学习小记之前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目的"><span class="toc-number">2.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-number">3.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-amp-配置"><span class="toc-number">4.</span> <span class="toc-text">安装&配置</span></a></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
@@ -553,12 +505,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -629,4 +658,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
