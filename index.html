@@ -206,8 +206,8 @@
 </li>
 </ul>
 <blockquote>
-<p>安装完成之后开始菜单会有：<br><img src="kinectInstall.jpg" alt="kinect安装的软件"></p>
-<p>介绍一下SDK Browser v2.0：<br><img src="SDKBrowser.JPG" alt="SDKBrowser"></p>
+<p>安装完成之后开始菜单会有：<br><img src="http://img.blog.csdn.net/20151112192549812" alt="kinect安装的软件"></p>
+<p>介绍一下SDK Browser v2.0：<br><img src="http://img.blog.csdn.net/20151112193011496" alt="SDKBrowser"></p>
 <p>##4.动作确认<br>主要有几种方法：</p>
 </blockquote>
 <ul>
@@ -216,8 +216,8 @@
 <li>Kinect的麦克风，查看设备管理器是否有Kinect for Windows USB Audio这一项</li>
 </ul>
 <blockquote>
-<p>用SDK Browser v2.0 里的 Kinect Configuration Verifier工具进行动作确认也是一个不错的选择：<br><img src="SDKBrowser2.png" alt="ConfigurationVerifier"></p>
-<p>运行结果如下：<br> <img src="Verifier.png" alt="这里写图片描述"><br> 注：USB Controller那一项出现叹号，官方的说法是不用理会，只要下面的视频图像正常就可以了，不用担心</p>
+<p>用SDK Browser v2.0 里的 Kinect Configuration Verifier工具进行动作确认也是一个不错的选择：<br><img src="http://img.blog.csdn.net/20151112193819466" alt="ConfigurationVerifier"></p>
+<p>运行结果如下：<br> <img src="http://img.blog.csdn.net/20151112194719241" alt="这里写图片描述"><br> 注：USB Controller那一项出现叹号，官方的说法是不用理会，只要下面的视频图像正常就可以了，不用担心</p>
 <p>##5.问题对策（安装没有问题的请略过此章节）<br>大家最不想看到的就是，按照上面写的安装好了，却运行不了或者出错这是怎么回事（此处应有捉急的图片）<br>木办法，人生不如意之事十有八九，俺刚开始安装的时候也是遇到遇到了问题这里跟大家哭诉一下（血的教训），刚开始安装的时候<strong>没有好好的进行动作确认</strong>（让我先哭一会er）以致于学习了可视画像，深度图像之后，却怎么也显示不了红外线画像，进展一下子就停住了，后来有一位前辈（很感谢他）告诉我用Vistual Studio 进行debug的方法（谁让我一直用eclipse呢，因为学校一直就是eclipse，估计是因为 1.开源不用花钱买license吧，貌似 Vistual Studio很贵哒，2.一般都是用linux上课，二者更合适），发现红外摄像头获取的图像的矩阵返回的都是0，后来在Troubleshooting里找到了解决的办法，当时想了千万种可能（此处运用夸张的修辞手法）怎么也没想到是因为用的英伟达的显卡用的驱动程序旧了，我当时特想对这台电脑以前的使用者说：你都什么不用更新吗？，话说回来，大家的力量是无穷的，要不是有这些资料的提醒还不知道要搞到什么时候呢！</p>
 </blockquote>
 <p>我们开看看<a href="https://msdn.microsoft.com/en-us/library/dn782035.aspx" target="_blank" rel="external">这里是MSDN的Troubleshooting</a><br>我就遇到过上面的英伟达显卡的驱动问题，其他的虽然没什么发言权，暂且在这里搬运并罗列一下（基本来自于官网），具体的请去上面的链接去淘</p>
@@ -257,39 +257,32 @@
 <thead>
 <tr>
 <th>症状</th>
-<th>原因</th>
-<th>解决方案</th>
+<th>是否需要查看原文原因</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>需要很长时间才开始</td>
 <td>出现此问题请查询原文时间有限不做赘述</td>
-<td>出现此问题请查询原文时间有限不做赘述</td>
 </tr>
 <tr>
 <td>Color帧数不是30fps</td>
-<td>出现此问题请查询原文</td>
 <td>出现此问题请查询原文</td>
 </tr>
 <tr>
 <td>Kinect Sensor不被被识别</td>
 <td>出现此问题请查询原文</td>
-<td>出现此问题请查询原文</td>
 </tr>
 <tr>
 <td>Color Basic实例运行但是Depth Basic不运行</td>
-<td>出现此问题请查询原文</td>
 <td>出现此问题请查询原文</td>
 </tr>
 <tr>
 <td>IR Basic实例的黑屏</td>
 <td>出现此问题请查询原文</td>
-<td>出现此问题请查询原文</td>
 </tr>
 <tr>
 <td>所有的实例都不能正常运行</td>
-<td>出现此问题请查询原文</td>
 <td>出现此问题请查询原文</td>
 </tr>
 </tbody>
